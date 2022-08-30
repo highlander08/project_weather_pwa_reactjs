@@ -7,10 +7,56 @@ html, body, #root {
 }
 
 .main-container {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+    /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg'); */
     background-size: cover;
     background-position: center;
+    /* background-image: url("https://th.bing.com/th/id/R.fb290153b80725012bc486767c29fedf?rik=wrLR5ULhV49HWg&riu=http%3a%2f%2fwww.wallpapersin4k.org%2fwp-content%2fuploads%2f2017%2f04%2fTemperature-Wallpaper-8.jpg&ehk=Q9rielWP8dsZMyBThegPBhqoISiyrWI4juVH3SZgDpA%3d&risl=&pid=ImgRaw&r=0"); */
+    
+    background: linear-gradient(0, #120c56, #000000);
 }
+.stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+}
+.stars{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+.stars{
+	animation: anim-stars 10s linear infinite;
+}
+.stars::after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+      100px 80px white,
+      80px 120px white,
+      300px 20px white,
+      250px 130px white,
+      200px 50px white,
+      150px 100px white,
+      320px 100px white;
+  }
 
 .main-container {
     height: 100%;
